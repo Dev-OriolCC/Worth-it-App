@@ -1,0 +1,19 @@
+Dark: #4E495C
+
+LightPurple: #D3C6F5
+
+Purple: #65558F
+
+BrightPurple: #B89CFF
+
+Black: #000000
+
+Green: #94CB6B
+
+Yellow: #EEB334
+
+Red: #D87493
+
+Blue: #8CB3DD
+
+
