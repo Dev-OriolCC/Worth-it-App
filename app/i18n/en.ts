@@ -7,11 +7,19 @@ const en = {
     back: "Back",
     logOut: "Log Out",
   },
-  welcomeScreen: {
+  // ONBOARDING SCREENS
+  onboardingScreen1: {
     welcomeTitle: "Welcome to WorthIt App",
     welcomeSubText: "Your tracking expense journey is about to begin!",
     letsGo: "Let's go!",
   },
+  onboardingScreen2: {
+    title: "Salary Information",
+    subTitle: "Complete the following information to continue. \nDon’t worry you can always edit later.",
+    nextBtn: "Next",
+  },
+
+
   errorScreen: {
     title: "Something went wrong!",
     friendlySubtitle:

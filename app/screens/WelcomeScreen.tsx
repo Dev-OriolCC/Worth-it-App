@@ -24,7 +24,7 @@ export const WelcomeScreen: FC<WelcomeScreenProps> = function WelcomeScreen(_pro
   const { logout } = useAuth()
 
   function goNext() {
-    navigation.navigate("Demo", { screen: "DemoShowroom", params: {} })
+    navigation.navigate("Onboarding2")
   }
 
   useHeader(
@@ -44,10 +44,10 @@ export const WelcomeScreen: FC<WelcomeScreenProps> = function WelcomeScreen(_pro
         <Text
           testID="welcome-heading"
           style={themed($welcomeHeading)}
-          tx="welcomeScreen:welcomeTitle"
+          tx="onboardingScreen1:welcomeTitle"
           preset="heading"
         />
-        <Text tx="welcomeScreen:welcomeSubText" preset="subheading" />
+        <Text tx="onboardingScreen1:welcomeSubText" preset="subheading" />
 
       </View>
       <View>
@@ -55,7 +55,7 @@ export const WelcomeScreen: FC<WelcomeScreenProps> = function WelcomeScreen(_pro
           testID="next-screen-button"
           preset="reversed"
           style={themed($customButtonStyle)}
-          tx="welcomeScreen:letsGo"
+          tx="onboardingScreen1:letsGo"
           onPress={goNext}
         />
       </View>

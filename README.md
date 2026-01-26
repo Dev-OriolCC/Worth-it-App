@@ -1,4 +1,4 @@
-# WorthItApp
+# WorthIt App
 ## 
 
 ```bash
