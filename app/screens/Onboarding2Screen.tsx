@@ -34,17 +34,51 @@ export const Onboarding2Screen : FC<Onboarding2ScreenProps> = function Onboardin
                     preset="heading"
                 />
                 <Text tx="onboardingScreen2:subTitle" preset="subheading" />
-                {/* //TODO: Add 4 Inputs */}
-                <TextField
-                    // status="error"
-                    value="Labore occaecat in id eu commodo aliquip occaecat veniam officia pariatur."
-                    labelTx="demoTextField:useCase.statuses.noStatus.label"
-                    labelTxOptions={{ prop: "label" }}
-                    helperTx="demoTextField:useCase.statuses.noStatus.helper"
-                    helperTxOptions={{ prop: "helper" }}
-                    placeholderTx="demoTextField:useCase.statuses.noStatus.placeholder"
-                    placeholderTxOptions={{ prop: "placeholder" }}
-                />
+                
+                <View
+                    style={themed($inputStyle)}
+                    >
+                    <TextField
+                        // status="error"
+                        value=""
+                        labelTx="onboardingScreen2:useCase.statuses.noStatus.label"
+                        labelTxOptions={{ prop: "label" }}
+                        helperTx="onboardingScreen2:useCase.statuses.noStatus.helper"
+                        helperTxOptions={{ prop: "helper" }}
+                        placeholderTx="onboardingScreen2:useCase.statuses.noStatus.placeholder"
+                        placeholderTxOptions={{ prop: "placeholder" }}
+                    />
+                </View>
+
+                <View
+                    style={themed($inputStyle)}
+                    >
+                    <TextField
+                        // status="error"
+                        value=""
+                        labelTx="onboardingScreen2:hours.statuses.noStatus.label"
+                        labelTxOptions={{ prop: "label" }}
+                        helperTx="onboardingScreen2:hours.statuses.noStatus.helper"
+                        helperTxOptions={{ prop: "helper" }}
+                        placeholderTx="onboardingScreen2:hours.statuses.noStatus.placeholder"
+                        placeholderTxOptions={{ prop: "placeholder" }}
+                    />
+                </View>
+
+                <View
+                    style={themed($inputStyle)}
+                    >
+                    <TextField
+                        // status="error"
+                        value=""
+                        labelTx="onboardingScreen2:workdays.statuses.noStatus.label"
+                        labelTxOptions={{ prop: "label" }}
+                        helperTx="onboardingScreen2:workdays.statuses.noStatus.helper"
+                        helperTxOptions={{ prop: "helper" }}
+                        placeholderTx="onboardingScreen2:workdays.statuses.noStatus.placeholder"
+                        placeholderTxOptions={{ prop: "placeholder" }}
+                    />
+                </View>
 
                 <Button
                     preset="reversed"
@@ -57,14 +91,22 @@ export const Onboarding2Screen : FC<Onboarding2ScreenProps> = function Onboardin
     )
 }
 
+const $topContainer: ThemedStyle<ViewStyle> = ({spacing, colors}) => ({
+    flexShrink: 1,
+    flexGrow: 1,
+    flexBasis: "57%",
+    justifyContent: "center",
+    paddingHorizontal: spacing.lg
+    
+})
+
+const $inputStyle: ThemedStyle<ViewStyle> = ({spacing}) => ({
+    marginVertical: "2.5%"
+})
+
 const $customButtonStyle: ThemedStyle<ViewStyle> = ({ colors, spacing }) => ({
     backgroundColor: colors.error, // TODO: Update Color
     borderRadius: 100,
-    marginHorizontal: spacing.md,
-    marginBottom: "30%"
-})
-
-const $topContainer: ThemedStyle<ViewStyle> = ({spacing, colors}) => ({
-    paddingHorizontal: spacing.lg,
-    marginTop: "10%"
+    marginTop: "2.5%",
+    marginHorizontal: spacing.md
 })

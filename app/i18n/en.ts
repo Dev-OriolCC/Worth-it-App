@@ -17,6 +17,38 @@ const en = {
     title: "Salary Information",
     subTitle: "Complete the following information to continue. \nDon’t worry you can always edit later.",
     nextBtn: "Next",
+
+    useCase: {
+      statuses: {
+        noStatus: {
+          label: "Salary",
+          helper: "Salary is required",
+          placeholder: "$37,000"
+        }
+      }
+    },
+
+    hours: {
+      statuses: {
+        noStatus: {
+          label: "Hours per workday",
+          helper: "Hours is required",
+          placeholder: "8"
+        }
+      }
+    },
+
+    workdays: {
+      statuses: {
+        noStatus: {
+          label: "Workdays per week",
+          helper: "Workdays is required",
+          placeholder: "6"
+        }
+      }
+    }
+
+
   },
 
 
