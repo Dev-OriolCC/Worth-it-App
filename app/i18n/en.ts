@@ -50,6 +50,19 @@ const en = {
 
 
   },
+  onboardingScreen3: {
+    title: "Select Categories",
+    subTitle: "Select the categories you want to track.\nAgain, don’t worry you can always edit later.",
+    nextBtn: "Next",
+    categories: {
+      foodAndDrinks: "Food & Drinks",
+      toys: "Toys",
+      fashion: "Fashion",
+      gadgets: "Gadgets",
+      decoration: "Decoration",
+      art: "Art",
+    }
+  },
 
 
   errorScreen: {

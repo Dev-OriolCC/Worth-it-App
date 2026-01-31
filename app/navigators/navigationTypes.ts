@@ -23,6 +23,7 @@ export type AppStackParamList = {
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
   Onboarding2: undefined
+  Onboarding3: undefined
 }
 
 export type AppStackScreenProps<T extends keyof AppStackParamList> = NativeStackScreenProps<
@@ -37,4 +38,4 @@ export type DemoTabScreenProps<T extends keyof DemoTabParamList> = CompositeScre
 
 export interface NavigationProps extends Partial<
   ComponentProps<typeof NavigationContainer<AppStackParamList>>
-> {}
+> { }

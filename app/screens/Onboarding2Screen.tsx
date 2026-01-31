@@ -23,7 +23,8 @@ export const Onboarding2Screen : FC<Onboarding2ScreenProps> = function Onboardin
     const { logout } = useAuth()
 
     function goNext() {
-        navigation.navigate("Demo", { screen: "DemoShowroom", params: {} })
+        //navigation.navigate("Demo", { screen: "DemoShowroom", params: {} })
+        navigation.navigate("Onboarding3");
     }
 
     return (
